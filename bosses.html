@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Руководство EMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__content">
+            <div class="logo">
+                <div class="logo__content">
+                    <a href="index.html" class="logo_href">
+                        <img src="img/logo_ems.svg" alt="" class="logo__img">
+                        <h2 class="logo__text">Emergency Medical Services</h2>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__main">
+                    <li class="nav__link">
+                        <a href="price.html" class="nav__link-href">Ценовая политика</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="complaint.html" class="nav__link-href">Жалобы на сотрудников</a>
+                    </li>
+                    <li class="nav__link nav__link-2">
+                        <a href="#" class="nav__link-href">О нас</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-info">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="history.html">История Главных Врачей</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-3">
+                                   <a href="#">Руководство EMS</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-4">
+                                    <a href="departments.html">Отделы EMS</a>
+                                 </h3>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li class="nav__link">
+                        <a href="#" class="nav__link-href">Внутренние регламенты</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-reglament">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="#">Устав EMS</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-3">
+                                   <a href="#">Лицензии</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-4">
+                                    <a href="#">Сертификаты</a>
+                                 </h3>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li class="nav__link">
+                        <a href="#" class="nav__link-href">Вступление в EMS</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-vstup">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="recovery.html">Заявление на восстановление</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-2">
+                                   <a href="employment.html">Заявление на трудоустройство</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="burger">
+                <div class="burger-items">
+                    <button type="button" class="burger-buttton" id="navToggle">
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                    </button>
+                </div>
+                <div class="burger-list-container">
+                    <ul class="burger-list" id="nav">
+                        <li class="burger-link">
+                            <a href="price.html" class="burger-link-href">Ценовая политика</a>
+                        </li>
+                        <li class="burger-link">
+                            <a href="complaint.html" class="burger-link-href">Жалобы на сотрудников</a>
+                        </li>
+                        <li class="burger-link">
+                            <a href="#" class="burger-link-href">О нас</a>
+                            <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                            <div class="dropdown-burger">
+                                <div class="dropmenu-burger">
+                                    <h3 class="drop-heading-burger drop-heading-1-burger">
+                                        <a href="history.html">История Главных Врачей</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                    <a href="bosses.html">Руководство EMS</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                        <a href="departments.html">Отделы EMS</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burger-link">
+                            <a href="#" class="burger-link-href">Вступление в EMS</a>
+                            <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                            <div class="dropdown-burger">
+                                <div class="dropmenu-burger">
+                                    <h3 class="drop-heading-burger drop-heading-1-burger">
+                                        <a href="recovery.html">Заявление на восстановление</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                    <a href="employment.html">Заявление на трудоустройство</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="bosses">
+        <h1 class="info-bosses">На данной странице представлено действующее руководство EMS</h1>
+        <div class="bosses-block">
+            <div class="bosses-bg">
+                <h1 class="boss-info">Высшее руководство</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/ewan_rey.png" alt="" class="boss-photo">
+                        <p class="boss-name">Ewan Rey</p>
+                        <p class="boss-post">Главный Врач</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/denis_addam.png" alt="" class="boss-photo">
+                        <p class="boss-name">Denis Addam</p>
+                        <p class="boss-post">Заместитель Главного Врача</p>
+                    </div>
+                    <div class="boss-item">
+                        <img src="img/parker.png" alt="" class="boss-photo">
+                        <p class="boss-name">Anthony Parker</p>
+                        <p class="boss-post">Заместитель Главного Врача</p>
+                    </div>
+                    <div class="boss-item">
+                        <img src="img/alastor_williams.png" alt="" class="boss-photo">
+                        <p class="boss-name">Alastor Williams</p>
+                        <p class="boss-post">Заместитель Главного Врача</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bosses-bg">
+                <h1 class="boss-info">Руководство DSD</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/yan_dokaev.png" alt="" class="boss-photo">
+                        <p class="boss-name">Yan Dokaev</p>
+                        <p class="boss-post">Заведующий отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/pavel_kesada.png" alt="" class="boss-photo">
+                        <p class="boss-name">Pavel Kesada</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Irena Neal</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bosses-bg">
+                <h1 class="boss-info">Руководство IEP</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/emilia_nakamura.png" alt="" class="boss-photo">
+                        <p class="boss-name">Emilia Nakamura</p>
+                        <p class="boss-post">Заведующий отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/alexandr_brain.png" alt="" class="boss-photo">
+                        <p class="boss-name">Alexandr Brain</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Ivan Grosman</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Aleksey Roopisyan</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Jonathan DeRose</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bosses-bg">
+                <h1 class="boss-info">Руководство ED</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/tany_williams.png" alt="" class="boss-photo">
+                        <p class="boss-name">Tany Williams</p>
+                        <p class="boss-post">Заведующий отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/nik_haley.png" alt="" class="boss-photo">
+                        <p class="boss-name">Nik Haley</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/william_wetty.png" alt="" class="boss-photo">
+                        <p class="boss-name">William Wetty</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bosses-bg">
+                <h1 class="boss-info">Руководство THD</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/sergio_jaa.png" alt="" class="boss-photo">
+                        <p class="boss-name">Sergio Jaa</p>
+                        <p class="boss-post">Заведующий отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/saylis_wetty.png" alt="" class="boss-photo">
+                        <p class="boss-name">Sayllis Wetty</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Tobby Miller</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                    <div class="boss-item">
+                        <img src="img/lissa_miller.png" alt="" class="boss-photo">
+                        <p class="boss-name">Lissa Miller</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bosses-bg">
+                <h1 class="boss-info">Руководство PD</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/colin_wade.png" alt="" class="boss-photo">
+                        <p class="boss-name">Colin Wade</p>
+                        <p class="boss-post">Заведующий отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Gleb Kabanov</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/fedya_rey.png" alt="" class="boss-photo">
+                        <p class="boss-name">Fedya Rey</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bosses-bg">
+                <h1 class="boss-info">Руководство SD</h1>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Irma Bartolova</p>
+                        <p class="boss-post">Заведующий отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="https://placehold.co/440x440" alt="" class="boss-photo">
+                        <p class="boss-name">Felix Sensation</p>
+                        <p class="boss-post">Заместитель заведующего отделением</p>
+                    </div>
+                </div>
+                <div class="boss-line">
+                    <div class="boss-item">
+                        <img src="img/rose_yen.png" alt="" class="boss-photo">
+                        <p class="boss-name">Rose Yen</p>
+                        <p class="boss-post">Старший специалист отделения</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer footer-fixed-2">
+        <img src="img/logo-gta5rp.svg" alt="" class="footer-img">
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="footer-nav-link">
+                    <img src="img/free-icon-game-controller-2331846 1.svg" alt="" class="footer-link-img">
+                    <a href="https://gta5rp.com/start" class="footer-link-href" target="_blank">Начать играть</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/free-icon-blarney-castle-1493984 1.svg" alt="" class="footer-link-img">
+                    <a href="#" class="footer-link-href" target="_blank">Сервер</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/star 1.svg" alt="" class="footer-link-img">
+                    <a href="https://forum.gta5rp.com/forums/server-no3-vinewood.151/" class="footer-link-href" target="_blank">Форум</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/discord 1.svg" alt="" class="footer-link-img">
+                    <a href="https://discord.gg/gta5rp" class="footer-link-href" target="_blank">дискорд</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <p class="about">Created by Denis Addam</p>
+</body>
+</html>

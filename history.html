@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__content">
+            <div class="logo">
+                <div class="logo__content">
+                    <a href="index.html" class="logo_href">
+                        <img src="img/logo_ems.svg" alt="" class="logo__img">
+                        <h2 class="logo__text">Emergency Medical Services</h2>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__main">
+                    <li class="nav__link">
+                        <a href="price.html" class="nav__link-href">Ценовая политика</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="complaint.html" class="nav__link-href">Жалобы на сотрудников</a>
+                    </li>
+                    <li class="nav__link nav__link-2">
+                        <a href="#" class="nav__link-href">О нас</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-info">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="history.html">История Главных Врачей</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-3">
+                                   <a href="bosses.html">Руководство EMS</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-4">
+                                    <a href="departments.html">Отделы EMS</a>
+                                 </h3>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li class="nav__link">
+                        <a href="#" class="nav__link-href">Внутренние регламенты</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-reglament">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="#">Устав EMS</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-3">
+                                   <a href="#">Лицензии</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-4">
+                                    <a href="#">Сертификаты</a>
+                                 </h3>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li class="nav__link">
+                        <a href="#" class="nav__link-href">Вступление в EMS</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-vstup">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="recovery.html">Заявление на восстановление</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-2">
+                                   <a href="employment.html">Заявление на трудоустройство</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="burger">
+                <div class="burger-items">
+                    <button type="button" class="burger-buttton" id="navToggle">
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                    </button>
+                </div>
+                <div class="burger-list-container">
+                    <ul class="burger-list" id="nav">
+                        <li class="burger-link">
+                            <a href="price.html" class="burger-link-href">Ценовая политика</a>
+                        </li>
+                        <li class="burger-link">
+                            <a href="complaint.html" class="burger-link-href">Жалобы на сотрудников</a>
+                        </li>
+                        <li class="burger-link">
+                            <a href="#" class="burger-link-href">О нас</a>
+                            <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                            <div class="dropdown-burger">
+                                <div class="dropmenu-burger">
+                                    <h3 class="drop-heading-burger drop-heading-1-burger">
+                                        <a href="history.html">История Главных Врачей</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                    <a href="bosses.html">Руководство EMS</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                        <a href="departments.html">Отделы EMS</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burger-link">
+                            <a href="#" class="burger-link-href">Вступление в EMS</a>
+                            <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                            <div class="dropdown-burger">
+                                <div class="dropmenu-burger">
+                                    <h3 class="drop-heading-burger drop-heading-1-burger">
+                                        <a href="recovery.html">Заявление на восстановление</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                    <a href="employment.html">Заявление на трудоустройство</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="history">
+        <h1 class="info-history">На данной странице вы можете c Главными Врачами EMS</h1>
+        <div class="history-block">
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="img/gregor.png" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Gregor VanHelsing</p>
+                        <p class="history-date">16.08.2022 - 17.12.2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="img/osipov.jpeg" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Max Osipov</p>
+                        <p class="history-date">17.12.2022 - 20.03.2023</p>
+                    </div>
+            </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="https://placehold.co/310x440" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Eugene Pol</p>
+                        <p class="history-date">25.03.2023 - 15.04.2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="https://placehold.co/310x440" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Olga Evil</p>
+                        <p class="history-date">19.04.2023 - 19.06.2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="img/addam.png" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Denis Addam</p>
+                        <p class="history-date">24.06.2023 - 24.07.2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="https://placehold.co/310x440" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Eva Rowley</p>
+                        <p class="history-date">29.07.2023 - 29.10.2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="https://placehold.co/310x440" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Slava Destiny</p>
+                        <p class="history-date">03.11.2024 - 04.06.2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="histoty-item">
+                <p class="center">
+                    <img src="img/ewan_rey.png" alt="" class="history-photo">
+                </p>
+                <div class="text">
+                    <div class="history-about">
+                        <p class="history-name">Ewan Rey</p>
+                        <p class="history-date">11.06.2024 - xx.xx.xxxx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer footer-fixed-2">
+        <img src="img/logo-gta5rp.svg" alt="" class="footer-img">
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="footer-nav-link">
+                    <img src="img/free-icon-game-controller-2331846 1.svg" alt="" class="footer-link-img">
+                    <a href="https://gta5rp.com/start" class="footer-link-href" target="_blank">Начать играть</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/free-icon-blarney-castle-1493984 1.svg" alt="" class="footer-link-img">
+                    <a href="#" class="footer-link-href" target="_blank">Сервер</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/star 1.svg" alt="" class="footer-link-img">
+                    <a href="https://forum.gta5rp.com/forums/server-no3-vinewood.151/" class="footer-link-href" target="_blank">Форум</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/discord 1.svg" alt="" class="footer-link-img">
+                    <a href="https://discord.gg/gta5rp" class="footer-link-href" target="_blank">дискорд</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <p class="about">Created by Denis Addam</p>
+</body>
+</html>

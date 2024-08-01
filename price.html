@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price EMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__content">
+            <div class="logo">
+                <div class="logo__content">
+                    <a href="index.html" class="logo_href">
+                        <img src="img/logo_ems.svg" alt="" class="logo__img">
+                        <h2 class="logo__text">Emergency Medical Services</h2>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__main">
+                    <li class="nav__link">
+                        <a href="price.html" class="nav__link-href">Ценовая политика</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="complaint.html" class="nav__link-href">Жалобы на сотрудников</a>
+                    </li>
+                    <li class="nav__link nav__link-2">
+                        <a href="#" class="nav__link-href">О нас</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-info">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="history.html">История Главных Врачей</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-3">
+                                   <a href="bosses.html">Руководство EMS</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-4">
+                                    <a href="departments.html">Отделы EMS</a>
+                                 </h3>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li class="nav__link">
+                        <a href="#" class="nav__link-href">Внутренние регламенты</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-reglament">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="#">Устав EMS</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-3">
+                                   <a href="#">Лицензии</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-4">
+                                    <a href="#">Сертификаты</a>
+                                 </h3>
+                            </div>
+                        </div>
+                    </li>-->
+                    <li class="nav__link">
+                        <a href="#" class="nav__link-href">Вступление в EMS</a>
+                        <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                        <div class="dropdown dropdown-vstup">
+                            <div class="dropmenu">
+                                <h3 class="drop-heading drop-heading-1">
+                                    <a href="recovery.html">Заявление на восстановление</a>
+                                </h3>
+                                <h3 class="drop-heading drop-heading-2">
+                                   <a href="employment.html">Заявление на трудоустройство</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="burger">
+                <div class="burger-items">
+                    <button type="button" class="burger-buttton" id="navToggle">
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                    </button>
+                </div>
+                <div class="burger-list-container">
+                    <ul class="burger-list" id="nav">
+                        <li class="burger-link">
+                            <a href="price.html" class="burger-link-href">Ценовая политика</a>
+                        </li>
+                        <li class="burger-link">
+                            <a href="complaint.html" class="burger-link-href">Жалобы на сотрудников</a>
+                        </li>
+                        <li class="burger-link">
+                            <a href="#" class="burger-link-href">О нас</a>
+                            <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                            <div class="dropdown-burger">
+                                <div class="dropmenu-burger">
+                                    <h3 class="drop-heading-burger drop-heading-1-burger">
+                                        <a href="history.html">История Главных Врачей</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                    <a href="bosses.html">Руководство EMS</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                        <a href="departments.html">Отделы EMS</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burger-link">
+                            <a href="#" class="burger-link-href">Вступление в EMS</a>
+                            <img class="nav__link-img" src="img/arrow_nav.svg" alt="">
+                            <div class="dropdown-burger">
+                                <div class="dropmenu-burger">
+                                    <h3 class="drop-heading-burger drop-heading-1-burger">
+                                        <a href="recovery.html">Заявление на восстановление</a>
+                                    </h3>
+                                    <h3 class="drop-heading-burger drop-heading-2-burger">
+                                    <a href="employment.html">Заявление на трудоустройство</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="price">
+        <h1 class="info-price">На данной странице вы можете ознакомиться с ценовой политикой на услуги EMS</h1>
+        <div class="price-table-info price-table-info-2">
+            <div class="price-heading">
+                <div class="price-heading-info">
+                    <p class="price-heading-info-text">Название услуги</p>
+                </div>
+                <div class="price-heading-info-2">
+                    <div class="price-item-info-inner">
+                        <p class="price-heading-info-text">Цена в рабочее время</p>
+                    </div>
+                    <div class="price-item-info-inner">
+                        <p class="price-heading-info-text-2">Цена в нерабочее время</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-items">
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Первична медицинска карта</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Медицинская карта без пометки</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">LS: 5.000$ <br> SS: 3.500$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">LS: 6.000$ <br> SS: 4.500$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Медицинская карта с пометкой (A) или (B)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">LS: 7.000$ <br> SS: 5.500$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">LS: 8.000$ <br> SS: 6.500$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Медицинская карта для гос.сотрудников с пометкой (A) или (B)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">5.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">6.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Укол от наркозависимости</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Медицинская маска у сотрудника</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Чек на психотерапию</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">200$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Услуги пластического хирурга</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$ / (( 150DP )) / (( 15 BP ))</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-table-info">
+            <div class="price-heading">
+                <div class="price-heading-info">
+                    <p class="price-heading-info-text">Сеансы психотерапии</p>
+                </div>
+                <div class="price-heading-info-2">
+                    <div class="price-item-info-inner">
+                        <p class="price-heading-info-text">Цена в рабочее время</p>
+                    </div>
+                    <div class="price-item-info-inner">
+                        <p class="price-heading-info-text-2">Цена в нерабочее время</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-items">
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Снятие пометки (B) - Требуется 3 сеанса</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">от 5.000$ за 1 сеанс</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">6.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Индивидуальное консультирование/психотерапия (первичный прием)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">От 10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">8.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Индивидуальное консультирование/психотерапия (повторный прием)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">От 8.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">5.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Семейная психотерапия (до 3-х человек)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">От 25.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Групповая психотерапия (для 3-х человек)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">От 25.000$ (Далее 5.000$ за человека)</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Курс реабилитации психической травмы</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">От 15.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Реабилитация наркозависимости, алкогольной зависимости, игровой зависимости</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">От 10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Не изменяется</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-table-info">
+            <div class="price-heading">
+                <div class="price-heading-info">
+                    <p class="price-heading-info-text">Хирургические услуги</p>
+                </div>
+                <div class="price-heading-info-2">
+                    <div class="price-item-info-inner">
+                        <p class="price-heading-info-text">Цена в рабочее время</p>
+                    </div>
+                    <div class="price-item-info-inner">
+                        <p class="price-heading-info-text-2">Цена в нерабочее время</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-items">
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Пулевые ранения</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Ножевое ранение</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Лечение ран / ссадин / порезов</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Лечение ожогов</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Черепно-мозговая травма</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Переломы / вывихи / ушибы</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Укусы насекомых / животных / человека</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Повторные консультации и обследования для контроля состояния пациента после операции</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Уход за послеоперационными пациентами</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">0$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Анализ крови (общий)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Анализ мочи</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Копрограмма</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Соскоб на грибковые инфекции</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Биохимический анализ витаминов</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$ за 1 вид</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">800$ за 1 вид</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Ультразвуковое излучение (УЗИ)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Иммуногематологические исследования</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.000$ за 1 вид</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.000$ за 1 вид</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Флюорография</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.200$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.200$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Тесты на онкомаркёры</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$ за 1 вид</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$ за 1 вид</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Гормональные исследования</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$ за 1 вид</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$ за 1 вид</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Электрокардиограмма (ЭКГ)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Магнитно-резонансная томография (МРТ)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.500$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Компьютерная томография (КТ)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.800$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.800$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Колоноскопия</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Мазок на ЗППП</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Инфузионная терапия</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.200$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">1.200$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Переливание компонентов крови</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Плазмаферез</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Зондирование</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Иммунотерапия</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">5.000$ за сеанс</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">5.000$ за сеанс</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Операции для пометки S*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Индивидуально</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">Индивидуально</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Извлечение инородного предмета заднего прохода</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">7.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">7.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Извлечение инородного предмета из половых органов</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">7.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">7.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Извлечение инородного предмета из органов слуха</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">7.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">7.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Аппендэктомия</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Геморроидэктомия</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Прерывание беременности</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">15.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">15.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Удаление грыжи межпозвоночных дисков</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Операции на спинном и головном мозге*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">25.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">25.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Пересадка волос (под цвет натуральных)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация роговицы (натуральный цвет глаз)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация почки*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">60.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">60.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация поджелудочной железы*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">70.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">70.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация костного мозга*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">70.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">70.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация печени*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">150.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">150.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация лёгкого*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">150.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">150.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Трансплантация сердца*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">230.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">230.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Липосакция</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">5.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">5.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Омоложение лица</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Циркумцизио</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Маммопластика</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Глютеопластика</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Лабиопластика</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Вагинопластика</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Препуциопластика</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">20.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Гименопластика</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">25.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">25.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Панникулэктомия*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">30.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">30.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Лазерная эпиляция</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.500$ за сеанс</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">2.500$ за сеанс</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">Лазерная деструкция (бородавки / родинки / родимые пятна / папилломы)</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">3.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">ДНК-тест на национальность*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">ДНК-тест на отцовство / материнство*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">ДНК-тест на родство*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">ДНК-тест на усваиваемость продуктов*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <p class="price-item-info-text">ДНК-тест на этническую принадлежность*</p>
+                    </div>
+                    <div class="price-item-info-2">
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                        <div class="price-item-info-inner">
+                            <p class="price-item-info-text-2">10.000$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="price-info-star">* - процедуры, требующие наличия RP-биографии/скриншот ситуации.</p>
+    </section>
+    <footer class="footer footer-fixed-2">
+        <img src="img/logo-gta5rp.svg" alt="" class="footer-img">
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="footer-nav-link">
+                    <img src="img/free-icon-game-controller-2331846 1.svg" alt="" class="footer-link-img">
+                    <a href="https://gta5rp.com/start" class="footer-link-href" target="_blank">Начать играть</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/free-icon-blarney-castle-1493984 1.svg" alt="" class="footer-link-img">
+                    <a href="#" class="footer-link-href" target="_blank">Сервер</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/star 1.svg" alt="" class="footer-link-img">
+                    <a href="https://forum.gta5rp.com/forums/server-no3-vinewood.151/" class="footer-link-href" target="_blank">Форум</a>
+                </li>
+                <li class="footer-nav-link">
+                    <img src="img/discord 1.svg" alt="" class="footer-link-img">
+                    <a href="https://discord.gg/gta5rp" class="footer-link-href" target="_blank">дискорд</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <p class="about">Created by Denis Addam</p>
+</body>
+</html>
